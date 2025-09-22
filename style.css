@@ -6,8 +6,8 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #4f46e5, #9333ea);
-  color: #fff;
+  background: #ffffff; /* 白背景 */
+  color: #333333;      /* 文字色は落ち着いたダークグレー */
 }
 
 .profile {
@@ -20,7 +20,19 @@ body {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid white;
+  border: 3px solid #4f46e5; /* アクセントカラーの枠 */
+}
+
+.profile h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #111111; /* 名前は少し濃い色 */
+}
+
+.profile p {
+  margin: 0.3rem 0 0;
+  font-size: 1rem;
+  color: #666666; /* サブテキストは薄めグレー */
 }
 
 .links a {
@@ -28,17 +40,17 @@ body {
   width: 250px;
   margin: 0.5rem auto;
   padding: 0.8rem;
-  background: white;
-  color: #333;
+  background: #f0f0f0; /* ボタン背景は薄いグレー */
+  color: #4f46e5;      /* ボタン文字はアクセントカラー */
   text-decoration: none;
   text-align: center;
   border-radius: 12px;
   font-weight: 600;
   transition: all 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 軽めのシャドウ */
 }
 
 .links a:hover {
-  background: #f0f0f0;
+  background: #e0e0ff;  /* ホバー時に淡い青っぽく */
   transform: translateY(-3px);
 }
